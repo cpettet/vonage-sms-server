@@ -4,12 +4,18 @@
   "description": "testing vonage api sms",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "test": "start",
+    "start:development": "nodemon -r dotenv/config server.js"
   },
   "author": "christian pettet",
   "license": "MIT",
   "dependencies": {
     "@vonage/server-sdk": "^2.10.10",
-    "dotenv": "^10.0.0"
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
