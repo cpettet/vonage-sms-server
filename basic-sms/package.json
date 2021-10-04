@@ -1,0 +1,15 @@
+{
+  "name": "basic-sms",
+  "version": "1.0.0",
+  "description": "testing vonage api sms",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "christian pettet",
+  "license": "MIT",
+  "dependencies": {
+    "@vonage/server-sdk": "^2.10.10",
+    "dotenv": "^10.0.0"
+  }
+}
