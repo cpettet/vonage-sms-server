@@ -1,0 +1,42 @@
+/*
+display
+positioning
+box-model
+typography
+transforms/manipulation
+miscellaneous
+*/
+
+.nav__bar {
+  /* display */
+  display: flex;
+  justify-content: center;
+
+  /* box-model */
+  padding: 1rem;
+}
+
+.nav__links {
+  /* display */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  /* box-model */
+  width: 20%;
+
+  /* typography */
+  list-style: none;
+}
+
+.nav__link {
+  /* typography */
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+.nav__link-active {
+  /* typography */
+  font-weight: 700;
+}
