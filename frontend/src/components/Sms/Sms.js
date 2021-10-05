@@ -9,7 +9,7 @@ function Sms() {
   const sendSms = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("/api/", {
+      const res = await fetch("/api/sms", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
@@ -17,7 +17,10 @@ function Sms() {
         body: formEncode({ text: message }),
       });
       if (!res.ok) {
-        alert("Message not sent");
+        alert("Failure: Message not sent");
+      } else {
+        setMessage("");
+        alert("Success: Message sent!");
       }
     } catch (e) {}
   };

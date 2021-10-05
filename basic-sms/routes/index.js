@@ -1,10 +1,9 @@
 const express = require("express");
-const smsRouter = require("./api/sms");
-const openTokRouter = require("./api/openTok");
+const apiRouter = require("./api");
 
 const router = express.Router();
 
-router.use("/api", smsRouter);
+router.use("/api", apiRouter);
 
 router.get("/test", (req, res) => {
   res.send("Hello, world");

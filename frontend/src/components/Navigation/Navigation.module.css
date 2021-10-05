@@ -21,7 +21,7 @@ miscellaneous
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
+
   /* box-model */
   width: 20%;
 
@@ -40,6 +40,12 @@ miscellaneous
 }
 
 .nav__link-active {
+  /* box-model */
+  border: 1px solid black;
+
   /* typography */
   font-weight: 700;
+
+  /* miscellaneous */
+  border-radius: 2rem;
 }
