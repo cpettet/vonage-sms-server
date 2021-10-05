@@ -1,5 +1,6 @@
 const express = require("express");
 const smsRouter = require("./api/sms");
+const openTokRouter = require("./api/openTok");
 
 const router = express.Router();
 
