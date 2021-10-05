@@ -30,6 +30,9 @@ miscellaneous
 }
 
 .nav__link {
+  /* box-model */
+  padding: 0rem 0.25rem;
+
   /* typography */
   text-decoration: none;
   color: black;
